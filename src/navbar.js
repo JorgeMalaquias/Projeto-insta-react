@@ -36,12 +36,10 @@ function Pesquisa() {
 
 
 function Icones() {
+    const icons = [{name:"paper-plane-outline"},{name:"compass-outline"},{name:"heart-outline"},{name:"person-outline"}];
     return (
         <div class="icones">
-            <IonIcon name="paper-plane-outline" />
-            <IonIcon name="compass-outline" />
-            <IonIcon name="heart-outline" />
-            <IonIcon name="person-outline" />
+            {icons.map(IonIcon)}
         </div>
     );
 }
